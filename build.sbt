@@ -1,16 +1,16 @@
 name := "structured-streaming-examples"
-
 version := "0.1"
+scalaVersion := "2.12.0"
 
-scalaVersion := "2.11.8"
-
-val spark2Ver = "2.2.0"
-
+val spark2Ver = "2.4.6"
 val typesafeConfig = "com.typesafe" % "config" % "1.3.3"
 val spark2Sql = "org.apache.spark" %% "spark-sql" % spark2Ver
-val elasticsearchHadoop = "org.elasticsearch" % "elasticsearch-hadoop" % "6.4.1"
+val elasticsearchHadoop = "org.elasticsearch" % "elasticsearch-hadoop" % "7.4.1"
+//val kafkaDipendency = "org.apache.spark" %% "spark-sql-kafka-0-10" % "2.4.6"
+
 
 libraryDependencies ++= Seq(
+//  kafkaDipendency,
   typesafeConfig,
   spark2Sql,
   elasticsearchHadoop
